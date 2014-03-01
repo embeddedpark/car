@@ -23,7 +23,11 @@ In order to make the device boot at all, a message needs to be received over
 CAN that enables the main CPU. One way is to just leave the HT-5 connected
 in a car, another is to attach a CAN adapter and send the following message:
 
-ID 661, 0300000000000000
+ID 0x661, 0300000000000000
+
+Can connection on Pins 17 CAN-High / 18 CAN-Low
+
+CAN Speed 100Kbit/s
 
 Use can use KiSim for this.
 
